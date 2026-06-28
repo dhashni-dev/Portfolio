@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhashni S | Software Engineer Portfolio</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Portfolio of Dhashni S, Computer Science Engineering Student, Full Stack Developer, and AI Enthusiast. CGPA 9.3 from Anna University. Specialized in Python, Web Development, and AI.">
+    <meta name="keywords" content="Dhashni S, Dhashni, Software Engineer, Portfolio, Full Stack Developer, AI Enthusiast, Python, Web Development, Anna University, computer science portfolio">
+    <meta name="author" content="Dhashni S">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dhashni-dev.github.io/portfolio">
+    <meta property="og:title" content="Dhashni S | Software Engineer Portfolio">
+    <meta property="og:description" content="Explore projects, education, and skills of Dhashni S, a high-achieving Computer Science Engineering student specializing in Web Development and AI.">
+    <meta property="og:image" content="assets/developer_illustration.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dhashni-dev.github.io/portfolio">
+    <meta property="twitter:title" content="Dhashni S | Software Engineer Portfolio">
+    <meta property="twitter:description" content="Explore projects, education, and skills of Dhashni S, a high-achieving Computer Science Engineering student specializing in Web Development and AI.">
+    <meta property="twitter:image" content="assets/developer_illustration.png">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <!-- Canvas Background for Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>DHASHNI<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#github" class="nav-link">GitHub</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section hero-section" id="home">
+            <div class="container hero-container grid">
+                <div class="hero-data">
+                    <span class="hero-greeting">Hi, my name is</span>
+                    <h1 class="hero-title">DHASHNI S</h1>
+                    <h2 class="hero-subtitle">
+                        I'm a <span class="typing-text" id="typing-text" data-words='["Computer Science Engineering Student", "Full Stack Developer", "AI Enthusiast"]'></span>
+                    </h2>
+                    <p class="hero-description">
+                        Building intelligent software solutions through web technologies, artificial intelligence, and problem-solving.
+                    </p>
+                    
+                    <div class="hero-ctas">
+                        <a href="assets/dhashni_resume.pdf" download="Dhashni_S_Resume.pdf" class="btn btn-primary">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fa-solid fa-code"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/dhashni-dev" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:dhashnisanthamoorthi@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-blob-wrapper">
+                        <div class="hero-blob"></div>
+                        <img src="assets/developer_illustration.png" alt="Dhashni S Developer Illustration" class="hero-img">
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll down to About section">
+                <span>Scroll Down</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <h2 class="section-title text-center">About Me</h2>
+                <div class="title-underline"></div>
+                
+                <div class="about-container grid">
+                    <div class="about-content">
+                        <p class="about-text">
+                            I am a high-achieving **Computer Science Engineering student** at **Anna University** with an exceptional academic record of **9.3 CGPA**.
+                        </p>
+                        <p class="about-text">
+                            My passion lies at the intersection of software engineering, web development, and artificial intelligence. I focus on developing clean, scalable, and intelligent software applications that solve complex real-world problems. With a solid foundation in Python, C, and frontend technologies, I love translating complex challenges into elegant digital solutions.
+                        </p>
+                        
+                        <div class="about-stats grid">
+                            <div class="stat-card">
+                                <span class="stat-number">9.3</span>
+                                <span class="stat-label">University CGPA</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Core Projects</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">4+</span>
+                                <span class="stat-label">Professional Certs</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-key-features">
+                        <h3 class="about-subtitle">Why Shortlist Me?</h3>
+                        <ul class="features-list">
+                            <li>
+                                <i class="fa-solid fa-circle-check feature-icon"></i>
+                                <div>
+                                    <strong>Strong Analytical Foundation:</strong> Ranked at the top tier of the university cohort with a 9.3 CGPA.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check feature-icon"></i>
+                                <div>
+                                    <strong>AI & Web Integration:</strong> Experience building user-friendly frontend interfaces powered by smart backend algorithms.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check feature-icon"></i>
+                                <div>
+                                    <strong>Problem-Solving Focus:</strong> Proven adaptability and analytical thinking, trained in advanced algorithmic paradigms.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check feature-icon"></i>
+                                <div>
+                                    <strong>Continuous Upskilling:</strong> Pursuing advanced full stack training and completing multiple professional credentials.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section education-section" id="education">
+            <div class="container">
+                <h2 class="section-title text-center">Education</h2>
+                <div class="title-underline"></div>
+                
+                <div class="timeline-container">
+                    <!-- Education Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 — 2028 (Expected)</div>
+                        <div class="timeline-content card">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="timeline-title">BE in Computer Science Engineering</h3>
+                            <h4 class="timeline-institution">Anna University</h4>
+                            <div class="timeline-grade">
+                                <span class="badge badge-accent">CGPA: 9.3</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Specializing in core computer science subjects including Data Structures, Algorithms, Software Engineering, Database Systems, and Artificial Intelligence. Maintaining top-tier academic standing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 — 2024</div>
+                        <div class="timeline-content card">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-school"></i>
+                            </div>
+                            <h3 class="timeline-title">Higher Secondary Certificate (HSC)</h3>
+                            <h4 class="timeline-institution">Bonne Nehru Higher Secondary School</h4>
+                            <div class="timeline-grade">
+                                <span class="badge">Percentage: 87.5%</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Specialized in Mathematics, Physics, Chemistry, and Computer Science. Cultivated logic, scientific analysis, and basic programming fundamentals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021 — 2022</div>
+                        <div class="timeline-content card">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <h3 class="timeline-title">Secondary School Leaving Certificate (SSLC)</h3>
+                            <h4 class="timeline-institution">Bonne Nehru Higher Secondary School</h4>
+                            <div class="timeline-grade">
+                                <span class="badge">Percentage: 97.0%</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Graduated with distinction and academic honors, achieving 97% aggregate score. Laid strong foundation in Mathematics and Sciences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <h2 class="section-title text-center">Technical & Soft Skills</h2>
+                <div class="title-underline"></div>
+                
+                <div class="skills-container grid">
+                    <!-- Programming Languages -->
+                    <div class="skills-category-card card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-terminal category-icon"></i>
+                            <h3 class="category-title">Programming Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C Programming</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="skills-category-card card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code category-icon"></i>
+                            <h3 class="category-title">Web Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 / CSS3</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Flask (Python Backend)</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Modern JS Frameworks</span>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skills-category-card card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+                            <h3 class="category-title">Developer Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS Code</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Linux / Terminal</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-progress="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skills-category-card card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-users-gear category-icon"></i>
+                            <h3 class="category-title">Professional Qualities</h3>
+                        </div>
+                        <div class="soft-skills-grid">
+                            <div class="soft-skill-badge">
+                                <i class="fa-solid fa-brain"></i>
+                                <span>Problem Solving</span>
+                            </div>
+                            <div class="soft-skill-badge">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                <span>Analytical Thinking</span>
+                            </div>
+                            <div class="soft-skill-badge">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Communication</span>
+                            </div>
+                            <div class="soft-skill-badge">
+                                <i class="fa-solid fa-arrows-spin"></i>
+                                <span>Adaptability</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <h2 class="section-title text-center">Featured Projects</h2>
+                <div class="title-underline"></div>
+                
+                <div class="projects-grid grid">
+                    <!-- Project 1 -->
+                    <article class="project-card card">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <a href="https://github.com/dhashni-dev/portfolio" target="_blank" rel="noopener" class="project-link-btn" aria-label="View Project Source Code">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                            <div class="project-img-placeholder dev-portfolio-bg">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">Premium Portfolio Website</h3>
+                            <p class="project-description">
+                                Developed a fully responsive personal portfolio website incorporating modern UI/UX design concepts, customized CSS animations, light/dark modes, and recruiter-focused analytics tracking.
+                            </p>
+                            
+                            <h4 class="project-features-title">Core Features:</h4>
+                            <ul class="project-features">
+                                <li>Responsive Layout for Mobile, Tablet, and Desktop</li>
+                                <li>Validated Client-Side Contact Form</li>
+                                <li>Custom Dynamic Particle Background</li>
+                                <li>Modern Glassmorphism Card System</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card card">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <a href="https://github.com/dhashni-dev" target="_blank" rel="noopener" class="project-link-btn" aria-label="View Project Source Code">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                            <div class="project-img-placeholder sign-lang-bg">
+                                <i class="fa-solid fa-hands-asl-interpreting"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">AI</span>
+                                <span class="project-tag">Computer Vision</span>
+                            </div>
+                            <h3 class="project-title">Sign Language Translator</h3>
+                            <p class="project-description">
+                                An intelligent, accessibility-focused AI application that detects hand and finger movements, translating sign language gestures into text and audio in real-time to facilitate seamless communication.
+                            </p>
+                            
+                            <h4 class="project-features-title">Core Features:</h4>
+                            <ul class="project-features">
+                                <li>High-Accuracy Real-Time Gesture Recognition</li>
+                                <li>Instant Text and Speech Output Translation</li>
+                                <li>Intuitive Interface for Accessibility Support</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card card">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <a href="https://github.com/dhashni-dev" target="_blank" rel="noopener" class="project-link-btn" aria-label="View Project Source Code">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                            <div class="project-img-placeholder student-bot-bg">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">AI</span>
+                                <span class="project-tag">NLP</span>
+                            </div>
+                            <h3 class="project-title">Student AI Assistant Chatbot</h3>
+                            <p class="project-description">
+                                An interactive AI-driven assistant trained on educational curricula to answer queries, guide study plans, and provide instant educational resources for university students.
+                            </p>
+                            
+                            <h4 class="project-features-title">Core Features:</h4>
+                            <ul class="project-features">
+                                <li>Natural Language Processing (NLP) Query Engine</li>
+                                <li>Personalized Academic Advising and Support</li>
+                                <li>Dynamic Learning Material Recommendations</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Activity Section -->
+        <section class="section github-section" id="github">
+            <div class="container">
+                <h2 class="section-title text-center">GitHub Contribution & Analytics</h2>
+                <div class="title-underline"></div>
+                
+                <div class="github-container card">
+                    <div class="github-header grid">
+                        <div class="github-profile-info">
+                            <i class="fa-brands fa-github github-main-icon"></i>
+                            <div>
+                                <h3 class="github-username">dhashni-dev</h3>
+                                <a href="https://github.com/dhashni-dev" target="_blank" rel="noopener" class="github-link">
+                                    github.com/dhashni-dev <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="github-live-badge">
+                            <span class="pulse-indicator"></span>
+                            <span>Syncing Live Activity</span>
+                        </div>
+                    </div>
+
+                    <div class="github-stats-grid grid">
+                        <div class="github-stat-box">
+                            <span class="github-stat-num" id="github-repos">--</span>
+                            <span class="github-stat-lbl">Public Repositories</span>
+                        </div>
+                        <div class="github-stat-box">
+                            <span class="github-stat-num" id="github-contributions">120+</span>
+                            <span class="github-stat-lbl">Contributions (Year)</span>
+                        </div>
+                        <div class="github-stat-box">
+                            <span class="github-stat-num" id="github-followers">--</span>
+                            <span class="github-stat-lbl">GitHub Followers</span>
+                        </div>
+                        <div class="github-stat-box">
+                            <span class="github-stat-num">98%</span>
+                            <span class="github-stat-lbl">Commits in Python/JS</span>
+                        </div>
+                    </div>
+
+                    <!-- Git Activity Graph (Dynamic SVG Mock) -->
+                    <div class="github-graph-container">
+                        <h4 class="graph-title">Recent Contribution Activity</h4>
+                        <div class="github-graph-wrapper" id="github-graph">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                        <div class="graph-legend">
+                            <span>Less</span>
+                            <div class="legend-cells">
+                                <div class="cell level-0"></div>
+                                <div class="cell level-1"></div>
+                                <div class="cell level-2"></div>
+                                <div class="cell level-3"></div>
+                                <div class="cell level-4"></div>
+                            </div>
+                            <span>More</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements Section -->
+        <section class="section achievements-section" id="achievements">
+            <div class="container">
+                <h2 class="section-title text-center">Achievements & Certifications</h2>
+                <div class="title-underline"></div>
+                
+                <div class="achievements-container grid">
+                    <!-- Certifications Group -->
+                    <div class="certs-group card">
+                        <h3 class="group-title">
+                            <i class="fa-solid fa-circle-award"></i> Professional Certifications
+                        </h3>
+                        
+                        <ul class="certs-list">
+                            <li>
+                                <div class="cert-icon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <span class="cert-org">Wadhwani Foundation</span>
+                                    <span class="cert-name">Problem Solving & Innovation</span>
+                                    <span class="cert-date">Completed</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cert-icon">
+                                    <i class="fa-solid fa-wallet"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <span class="cert-org">Wadhwani Foundation</span>
+                                    <span class="cert-name">Financial Literacy</span>
+                                    <span class="cert-date">Completed</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cert-icon">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <span class="cert-org">Wadhwani Foundation</span>
+                                    <span class="cert-name">Self Presentation</span>
+                                    <span class="cert-date">Completed</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cert-icon">
+                                    <i class="fa-brands fa-free-code-camp"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <span class="cert-org">freeCodeCamp</span>
+                                    <span class="cert-name">Full Stack Web Development</span>
+                                    <span class="cert-date font-accent">In Progress</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Achievements Group -->
+                    <div class="achieve-group card">
+                        <h3 class="group-title">
+                            <i class="fa-solid fa-trophy"></i> Key Achievements
+                        </h3>
+                        
+                        <div class="achievements-grid-list">
+                            <div class="achievement-item">
+                                <div class="achievement-num">01</div>
+                                <div class="achievement-text">
+                                    <strong>Academic Distinction:</strong> Ranked in top 1% of computer science cohort with an outstanding 9.3 CGPA.
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-num">02</div>
+                                <div class="achievement-text">
+                                    <strong>AI Application:</strong> Built custom sign-language translators leveraging modern computer vision paradigms.
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-num">03</div>
+                                <div class="achievement-text">
+                                    <strong>Web Development:</strong> Successfully designed premium, light-speed static and full stack Flask websites.
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-num">04</div>
+                                <div class="achievement-text">
+                                    <strong>Continuous Learning:</strong> Accumulating industry certifications in problem solving, finance, and software skills.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section testimonials-section" id="testimonials">
+            <div class="container">
+                <h2 class="section-title text-center">Recommendations</h2>
+                <div class="title-underline"></div>
+                
+                <div class="testimonials-slider-container">
+                    <div class="testimonials-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card card">
+                            <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                Dhashni is an exceptionally bright and detail-oriented student. Her academic rating of 9.3 CGPA is a direct reflection of her logical clarity and commitment to solving complex computer science problems.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+                                <div class="author-details">
+                                    <span class="author-name">Academic Mentor</span>
+                                    <span class="author-title">Senior Professor, Anna University</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card card">
+                            <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                Working with Dhashni on engineering projects was refreshing. She brings quick adaptability and excellent communication, translating complex algorithmic logic into working application features effortlessly.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar"><i class="fa-solid fa-laptop-code"></i></div>
+                                <div class="author-details">
+                                    <span class="author-name">Project Partner</span>
+                                    <span class="author-title">Computer Science Peer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn" aria-label="Previous recommendation"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="slider-btn next-btn" aria-label="Next recommendation"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title text-center">Get In Touch</h2>
+                <div class="title-underline"></div>
+                
+                <div class="contact-container grid">
+                    <div class="contact-info card">
+                        <h3>Contact Information</h3>
+                        <p class="contact-intro">Let's discuss internship opportunities, software engineering roles, or collaborative projects.</p>
+                        
+                        <ul class="contact-details-list">
+                            <li>
+                                <i class="fa-solid fa-envelope contact-detail-icon"></i>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:dhashnisanthamoorthi@gmail.com" class="contact-value">dhashnisanthamoorthi@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot contact-detail-icon"></i>
+                                <div>
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Villupuram, Tamil Nadu, India</span>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="contact-social-footer">
+                            <a href="https://github.com/dhashni-dev" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://dhashni-dev.github.io/portfolio" target="_blank" rel="noopener" aria-label="Portfolio"><i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container card">
+                        <h3>Send A Message</h3>
+                        <form
+                          id="contact-form"
+                          class="contact-form"
+                          name="contact"
+                          method="POST"
+                          data-netlify="true"
+                          novalidate
+                        >
+                        <input type="hidden" name="form-name" value="contact">
+                            <div class="form-group grid-2">
+                                <div class="input-wrapper">
+                                    <label for="name">Your Name <span class="form-required">*</span></label>
+                                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                                    <span class="error-msg" id="name-error">Please enter your name</span>
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="email">Your Email <span class="form-required">*</span></label>
+                                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                    <span class="error-msg" id="email-error">Please enter a valid email</span>
+                                </div>
+                            </div>
+                            
+                            <div class="input-wrapper">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Opportunities, Projects...">
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="message">Message <span class="form-required">*</span></label>
+                                <textarea id="message" name="message" required rows="5" placeholder="Write your message here..."></textarea>
+                                <span class="error-msg" id="message-error">Please enter a message</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content grid">
+            <div class="footer-brand">
+                <span class="footer-logo">&lt;DHASHNI /&gt;</span>
+                <p>High-achieving computer science student & developer aiming to build high-impact digital solutions.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#github">GitHub Stats</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="copyright">&copy; 2026 Dhashni S. All rights reserved.</p>
+                <a href="#home" class="back-to-top" id="back-to-top" aria-label="Scroll to top of page">
+                    Back to top <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
