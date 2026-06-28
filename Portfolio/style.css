@@ -1549,6 +1549,10 @@ a.contact-value:hover {
     gap: 20px;
 }
 
+.honeypot-field {
+    display: none;
+}
+
 .input-wrapper {
     display: flex;
     flex-direction: column;

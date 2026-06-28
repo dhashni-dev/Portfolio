@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formStatus = document.getElementById('form-status');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             
             const nameField = document.getElementById('name');
@@ -433,48 +433,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 const submitBtn = contactForm.querySelector('.btn-submit');
                 const btnText = submitBtn.querySelector('span');
                 const btnIcon = submitBtn.querySelector('i');
+                const formData = new FormData(contactForm);
                 
                 // Show loading state
                 submitBtn.disabled = true;
                 btnText.textContent = 'Sending...';
                 btnIcon.className = 'fa-solid fa-spinner fa-spin';
+                formStatus.style.display = 'none';
 
-                // Simulate form submission delay
-               fetch("/", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
-    },
-    body: new URLSearchParams(
-        new FormData(contactForm)
-    ).toString()
-})
-.then(() => {
+                try {
+                    const response = await fetch(contactForm.action, {
+                        method: 'POST',
+                        headers: {
+                            'Accept': 'application/json'
+                        },
+                        body: formData
+                    });
 
-    formStatus.style.display = "block";
-    formStatus.className = "form-status success";
-    formStatus.textContent =
-        "Message sent successfully!";
+                    if (!response.ok) {
+                        throw new Error('Form submission failed');
+                    }
 
-    contactForm.reset();
-
-    submitBtn.disabled = false;
-    btnText.textContent = "Send Message";
-    btnIcon.className =
-        "fa-solid fa-paper-plane";
-})
-.catch(() => {
-
-    formStatus.style.display = "block";
-    formStatus.className = "form-status error";
-    formStatus.textContent =
-        "Failed to send message.";
-
-    submitBtn.disabled = false;
-    btnText.textContent = "Send Message";
-    btnIcon.className =
-        "fa-solid fa-paper-plane";
-});
+                    formStatus.className = 'form-status success';
+                    formStatus.textContent = 'Message sent successfully!';
+                    contactForm.reset();
+                } catch (error) {
+                    console.error('Contact form error:', error);
+                    formStatus.className = 'form-status error';
+                    formStatus.textContent = 'Failed to send message. Please email me directly at dhashnisanthamoorthi@gmail.com.';
+                } finally {
+                    formStatus.style.display = 'block';
+                    submitBtn.disabled = false;
+                    btnText.textContent = 'Send Message';
+                    btnIcon.className = 'fa-solid fa-paper-plane';
+                }
             }
         });
 
