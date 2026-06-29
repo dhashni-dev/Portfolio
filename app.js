@@ -54,11 +54,19 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================== */
     const mobileToggle = document.getElementById('mobile-toggle');
     const navMenu = document.getElementById('nav-menu');
+    const sidebarClose = document.getElementById('sidebar-close');
     const navLinks = document.querySelectorAll('.nav-link');
 
     if (mobileToggle && navMenu) {
+        const closeSidebar = () => {
+            navMenu.classList.remove('active');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+            mobileToggle.querySelector('i').className = 'fa-solid fa-bars';
+        };
+
         mobileToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
+            mobileToggle.setAttribute('aria-expanded', navMenu.classList.contains('active') ? 'true' : 'false');
             // Toggle hamburger icon between bars and times (close)
             const icon = mobileToggle.querySelector('i');
             if (navMenu.classList.contains('active')) {
@@ -68,12 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        if (sidebarClose) {
+            sidebarClose.addEventListener('click', closeSidebar);
+        }
+
         // Close menu on link click
         navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                mobileToggle.querySelector('i').className = 'fa-solid fa-bars';
-            });
+            link.addEventListener('click', closeSidebar);
         });
     }
 

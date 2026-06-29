@@ -6,8 +6,8 @@
     <title>Dhashni S | Software Engineer Portfolio</title>
     
     <!-- SEO Optimization -->
-    <meta name="description" content="Portfolio of Dhashni S, Computer Science Engineering Student, Full Stack Developer, and AI Enthusiast. CGPA 9.3 from Anna University. Specialized in Python, Web Development, and AI.">
-    <meta name="keywords" content="Dhashni S, Dhashni, Software Engineer, Portfolio, Full Stack Developer, AI Enthusiast, Python, Web Development, Anna University, computer science portfolio">
+    <meta name="description" content="Portfolio of Dhashni S, Computer Science Engineering Student and Developer. Showcasing projects in Java, Python, Web Development, AI-powered applications, Flask, and Full Stack Development.">
+    <meta name="keywords" content="Dhashni S, Dhashni, Portfolio, Computer Science Engineering Student, Java Developer, Python Developer, Web Developer, Full Stack Developer, Flask, Gemini API, AI Projects, HTML, CSS, JavaScript, GitHub Portfolio">
     <meta name="author" content="Dhashni S">
     
     <!-- Open Graph / Facebook -->
@@ -51,6 +51,9 @@
             </a>
             
             <nav class="nav-menu" id="nav-menu">
+                <button class="sidebar-close" id="sidebar-close" aria-label="Close navigation menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
                 <ul class="nav-list">
                     <li><a href="#home" class="nav-link active-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
@@ -71,7 +74,7 @@
                 </button>
                 
                 <!-- Mobile Menu Button -->
-                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu" aria-expanded="false">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
@@ -86,7 +89,7 @@
                     <span class="hero-greeting">Hi, my name is</span>
                     <h1 class="hero-title">DHASHNI S</h1>
                     <h2 class="hero-subtitle">
-                        I'm a <span class="typing-text" id="typing-text" data-words='["Computer Science Engineering Student", "Full Stack Developer", "AI Enthusiast"]'></span>
+                        I'm a <span class="typing-text" id="typing-text" data-words='["Computer Science Engineering Student", "Java & Python Developer", "Web Development Enthusiast", "AI Application Builder"]'></span>
                     </h2>
                     <p class="hero-description">
                         Building intelligent software solutions through web technologies, artificial intelligence, and problem-solving.
@@ -276,10 +279,10 @@
                             <div class="skill-item">
                                 <div class="skill-info">
                                     <span class="skill-name">Python</span>
-                                    <span class="skill-percentage">90%</span>
+                                    <span class="skill-percentage">80%</span>
                                 </div>
                                 <div class="skill-bar-bg">
-                                    <div class="skill-bar-fill" data-progress="90%"></div>
+                                    <div class="skill-bar-fill" data-progress="80%"></div>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -293,7 +296,7 @@
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-name">Java</span>
                                     <span class="skill-percentage">75%</span>
                                 </div>
                                 <div class="skill-bar-bg">
@@ -455,36 +458,36 @@
                                     <i class="fa-brands fa-github"></i> Source Code
                                 </a>
                             </div>
-                            <div class="project-img-placeholder sign-lang-bg">
-                                <i class="fa-solid fa-hands-asl-interpreting"></i>
+                            <div class="project-img-placeholder expense-tracker-bg">
+                              <i class="fa-solid fa-wallet"></i>
                             </div>
                         </div>
-                        
                         <div class="project-info">
-                            <div class="project-tags">
-                                <span class="project-tag">Python</span>
-                                <span class="project-tag">AI</span>
-                                <span class="project-tag">Computer Vision</span>
+                           <div class="project-tags">
+                             <span class="project-tag">JavaScript</span>
+                             <span class="project-tag">Chart.js</span>
+                             <span class="project-tag">Responsive Design</span>
                             </div>
-                            <h3 class="project-title">Sign Language Translator</h3>
+
+                            <h3 class="project-title">Personal Expense Tracker</h3>
+
                             <p class="project-description">
-                                An intelligent, accessibility-focused AI application that detects hand and finger movements, translating sign language gestures into text and audio in real-time to facilitate seamless communication.
+                              A responsive expense management dashboard that enables users to track daily spending, categorize transactions, visualize financial trends, and manage budgets through an interactive and user-friendly interface.
                             </p>
-                            
+
                             <h4 class="project-features-title">Core Features:</h4>
                             <ul class="project-features">
-                                <li>High-Accuracy Real-Time Gesture Recognition</li>
-                                <li>Instant Text and Speech Output Translation</li>
-                                <li>Intuitive Interface for Accessibility Support</li>
+                                <li>Expense Tracking with Local Storage Persistence</li>
+                                <li>Category-Based Analytics and Reporting</li>
+                                <li>Interactive Charts and Financial Insights</li>
                             </ul>
                         </div>
                     </article>
-
                     <!-- Project 3 -->
                     <article class="project-card card">
                         <div class="project-img-wrapper">
                             <div class="project-overlay">
-                                <a href="https://github.com/dhashni-dev" target="_blank" rel="noopener" class="project-link-btn" aria-label="View Project Source Code">
+                                <a href="https://github.com/dhashni-dev/student-ai-assistant" target="_blank" rel="noopener" class="project-link-btn" aria-label="View Project Source Code">
                                     <i class="fa-brands fa-github"></i> Source Code
                                 </a>
                             </div>
@@ -496,19 +499,19 @@
                         <div class="project-info">
                             <div class="project-tags">
                                 <span class="project-tag">Python</span>
-                                <span class="project-tag">AI</span>
-                                <span class="project-tag">NLP</span>
+                                <span class="project-tag">AI Chatbot</span>
+                                <span class="project-tag">Gemini API</span>
                             </div>
                             <h3 class="project-title">Student AI Assistant Chatbot</h3>
                             <p class="project-description">
-                                An interactive AI-driven assistant trained on educational curricula to answer queries, guide study plans, and provide instant educational resources for university students.
+                                An AI-powered educational assistant integrated with the Gemini API to provide instant responses, explain academic concepts, assist with study planning, and support students through natural language conversations.
                             </p>
                             
                             <h4 class="project-features-title">Core Features:</h4>
                             <ul class="project-features">
-                                <li>Natural Language Processing (NLP) Query Engine</li>
-                                <li>Personalized Academic Advising and Support</li>
-                                <li>Dynamic Learning Material Recommendations</li>
+                                <li>Gemini API Integration for AI-Powered Assistance</li>
+                                <li>Real-Time Question Answering and Concept Explanations</li>
+                                <li>Personalized Study Support and Learning Recommendations</li>
                             </ul>
                         </div>
                     </article>
@@ -752,7 +755,7 @@
                         
                         <div class="contact-social-footer">
                             <a href="https://github.com/dhashni-dev" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://dhashni-dev.github.io/portfolio" target="_blank" rel="noopener" aria-label="Portfolio"><i class="fa-solid fa-globe"></i></a>
+                            <a href="https://www.linkedin.com/in/dhashni-s-87b59932b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                         </div>
                     </div>
 
