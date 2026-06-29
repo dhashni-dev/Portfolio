@@ -1,4 +1,4 @@
-#🌐 Personal Portfolio Website
+# 🌐 Personal Portfolio Website
 
 A modern and responsive portfolio website designed to showcase my skills, projects, and journey as an aspiring Frontend Developer.
 
@@ -6,39 +6,39 @@ The website serves as a central hub where recruiters, developers, and collaborat
 
 ---
 
-##🚀 Features
+## 🚀 Features
 
-###👨‍💻 About Me
+### 👨‍💻 About Me
 
 * Professional introduction and background
 * Overview of skills and interests
 * Career and learning journey
 
-###🛠️ Skills Showcase
+### 🛠️ Skills Showcase
 
 * Frontend development skills
 * Programming languages and technologies
 * Tools and platforms currently used
 
-###📂 Project Showcase
+### 📂 Project Showcase
 
 * Display of featured projects
 * Project descriptions and technologies used
 * Direct access to project repositories and demos
 
-###📱 Responsive Design
+### 📱 Responsive Design
 
 * Mobile-friendly layout
 * Optimized for tablets and desktops
 * Smooth user experience across devices
 
-###📬 Contact Section
+### 📬 Contact Section
 
 * Easy communication with recruiters and collaborators
 * Contact form integration
 * Professional networking accessibility
 
-###✨ Modern User Interface
+### ✨ Modern User Interface
 
 * Clean and professional design
 * Interactive elements and smooth navigation
@@ -46,43 +46,43 @@ The website serves as a central hub where recruiters, developers, and collaborat
 
 ---
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-###Frontend
+### Frontend
 
 * HTML5
 * CSS3
 * JavaScript
 
-###Development Tools
+### Development Tools
 
 * Git
 * GitHub
 * VS Code
 
-###Deployment
+### Deployment
 
 * GitHub Pages
 
 ---
 
-##📂 Featured Projects
+## 📂 Featured Projects
 
-###🌐 Personal Portfolio Website
+### 🌐 Personal Portfolio Website
 
 A responsive portfolio website showcasing my skills, projects, and professional information.
 
-###🤖 Student AI Assistant
+### 🤖 Student AI Assistant
 
 An AI-powered educational assistant built using the Google Gemini API to help students with academic support, study planning, and learning resources.
 
-###💰 Personal Expense Tracker
+### 💰 Personal Expense Tracker
 
 A finance management application that helps users track expenses, organize spending, and gain insights into personal financial habits.
 
 ---
 
-##🎯 Project Objectives
+## 🎯 Project Objectives
 
 * Build a professional online presence
 * Showcase technical and problem-solving skills
@@ -92,7 +92,7 @@ A finance management application that helps users track expenses, organize spend
 
 ---
 
-##🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 * Additional React-based projects
 * Advanced UI/UX improvements
@@ -102,9 +102,9 @@ A finance management application that helps users track expenses, organize spend
 
 ---
 
-##👩‍💻 Author
+## 👩‍💻 Author
 
-Dhashni S
+**Dhashni S**
 
 Computer Science Engineering Student | Frontend Developer | Aspiring Software Engineer
 
@@ -112,7 +112,7 @@ Passionate about building modern web applications, exploring AI technologies, an
 
 ---
 
-##🌐 Live Portfolio
+## 🌐 Live Portfolio
 
-Portfolio Website:
+**Portfolio Website:**
 https://dhashni-dev.github.io/Portfolio/
