@@ -461,6 +461,7 @@ body.light-theme .sun-icon {
     margin-bottom: 16px;
     letter-spacing: -2px;
     background: linear-gradient(to right, var(--text-primary) 60%, var(--accent-secondary));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
